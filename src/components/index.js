@@ -6,7 +6,9 @@ export const Box = styled.View`
   overflow: hidden;
   flex: ${(props) => (props.height ? "none" : 1)};
   width: ${(props) => (props.fluid ? "100%" : props.width || "auto")};
+  max-width: ${(props) => (props.fluid ? "100%" : props.width || "auto")};
   height: ${(props) => props.height || "auto"};
+  max-height: ${(props) => props.height || "auto"};
   margin: ${(props) => props.spacing || 0};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   justify-content: ${(props) => props.justify || "flex-start"};
@@ -25,7 +27,7 @@ export const Title = styled.Text`
   padding: ${(props) => (props.hasPadding ? "20px" : "0px")};
   letter-spacing: -0.8px;
   line-height: ${(props) => fonts.title.sizes[props.variant || "normal"]};
-  text-align: ${(props) => props.align || "left"};
+  text-align: ${(props) => props.align || "center"};
   text-decoration: ${(props) => (props.underline ? "underline" : "none")};
   font-weight: ${(props) => (props.bold ? "800" : "normal")};
 `;
@@ -35,7 +37,7 @@ export const Button = styled.TouchableOpacity`
   border-radius: 5px;
   padding: 13px 30px;
   background: ${(props) => colors[props.background || "primary"]};
-  width: ${(props) => (props.block ? "100%" : "auto")};
+  width: 97%;
   align-items: center;
 `;
 
@@ -47,6 +49,7 @@ export const Spacer = styled.View`
 export const Text = styled.Text.attrs((props) => ({
   onPress: props.onPress,
 }))`
+  width: 97%;
   color: ${(props) => colors[props.color || "muted"]};
   letter-spacing: -0.6px;
   font-size: ${(props) => fonts.text.sizes[props.variant || "normal"]};
@@ -63,3 +66,19 @@ export const Text = styled.Text.attrs((props) => ({
         : "20px 20px 0 20px"
       : "0px"};
 `;
+
+export const Input = styled.TextInput.attrs({
+  placeholderTextColor: colors.muted,
+})`
+  display:flex;
+  width: 96%;
+  padding: 13px 15px;
+  font-size: 17px;
+  border-radius: 0px;
+  background: ${colors.light};
+  border: 1px solid ${colors.muted};
+  color: ${colors.dark};  
+  
+  `;
+
+ 
