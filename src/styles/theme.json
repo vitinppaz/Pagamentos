@@ -1,0 +1,18 @@
+{
+    "colors": {
+        "pineGreen": "#006557",
+        "gray": "#6D7A78",
+        "biceBlue": "#07689F",
+        "outerSpace":"#424F4D",
+        "white": "#fff"
+    },
+    "fonts":{
+        "title":{
+            
+        },
+
+        "text":{
+
+        }
+    }
+}
