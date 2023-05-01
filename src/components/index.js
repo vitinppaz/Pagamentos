@@ -77,8 +77,9 @@ export const Input = styled.TextInput.attrs({
   border-radius: 0px;
   background: ${colors.light};
   border: 1px solid ${colors.muted};
-  color: ${colors.dark};  
+  color: ${colors.black};  
   
   `;
+
 
  
