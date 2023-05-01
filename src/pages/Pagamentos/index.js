@@ -4,11 +4,17 @@ import { Box, Title, Text, Button, Spacer, Input, myNumber } from "../../compone
 import Header from "../../components/Header";
 
 
+
 const Pagamentos = () =>{
     return (
+           <>
+
+           <Header  title="Pagamento"/>
+
         <Box background="light" justify="center" align="center" hasPadding>
-           <Header title="Pagamentos"/>
+
             
+         
             <Text color='warning'>Insira os dados para concluir a contratação via cartão de crédito.</Text>
             <Spacer size="30px"/>
 
@@ -40,7 +46,8 @@ const Pagamentos = () =>{
             
             
         </Box>
-
+        
+        </>
         
 
         
